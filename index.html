@@ -253,22 +253,34 @@
         
         <section class="contacts">
            <div class="container">
-                <div>
+                <div class="sign-form">
                     <h2 class="title-prices">Онлайн-запись</h2>
                     <form class="signform">
-                        <input type="text" name="name" id="name" placeholder="имя*">
-                        <input type="tel" name="tel" id="tel" placeholder="телефон*">
-                        <textarea name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
-                        <button type="submit" class="online-sign">отправить</button>
+                        <div class="sign-name-tel">
+                            <input class="input-name" type="text" name="name" id="name" placeholder="имя*">
+                            <input class="input-tel" type="tel" name="tel" id="tel" placeholder="телефон*">
+                        </div>
+                        <div class="message-box">
+                            <textarea class="message-area" name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
+                        </div>
+                        <button type="submit" class="sign-online">отправить</button>
                       </form>
                 </div>
-                <div id="contacts">
+                <div class="contacts-foot" id="contacts">
                     <h2 class="title-prices">Контакты</h2>
                     <address>
-                    <a class="adr-btn" href="https://goo.gl/maps/pnBYs9vm31GL84VH8"> <span> ул. Васильковая, 7А <br> Киев, 08132</span></a>
-                    <a class="adr-btn" href="tel:+380441111111"><span>+38044 111 11 11</span></a>
-                    <a class="adr-btn" href="mailto:barbershop@email.com"><span>barbershop@email.com</span></a>
-                    </address>
+                        <ul class="address-list-foot">
+                            <li>
+                                <a class="adr-btn" href="https://goo.gl/maps/pnBYs9vm31GL84VH8"> <span> ул. Васильковая, 7А <br> Киев, 08132</span></a>
+                            </li>
+                            <li> 
+                                <a class="adr-btn" href="tel:+380441111111"><span>+38044 111 11 11</span></a> 
+                            </li>
+                            <li>
+                                <a class="adr-btn" href="mailto:barbershop@email.com"><span>barbershop@email.com</span></a>
+                            </li>
+                        </ul>
+                        </address>
                     <h3 class="work-hours">ВРЕМЯ РАБОТЫ</h3>
                     <p class="adr-btn">Ежедневно с 9:00 до 22:00</p>
                 </div>
