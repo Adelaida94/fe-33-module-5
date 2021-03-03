@@ -37,7 +37,7 @@
                         <a href="tel:+380441111111" class="nav-link">+38 044 111 11 11</a>
                     </li>
                     <li> 
-                        <a class="sign-online-black" href="#">ОНЛАЙН-ЗАПИСЬ</a>
+                        <a class="sign-online-black" href="#" data-toggle-backdrop-sign>ОНЛАЙН-ЗАПИСЬ</a>
                     </li>
                 </ul>
                 <ul class="social-netw">
@@ -77,7 +77,7 @@
                     <!--Разрыв абзаца-->
                     <pre class="desc-paragraph">Если ты хочешь добавить в свой образ больше <br> уверенности – тебе точно к нам.</pre>
                     <pre class="about-paragraph">Мы команда, которая никогда не останавливается на достигнутом <br> и жаждет перемен. И когда ты попадешь в руки нашего мастера,<br> то уже никогда не сможешь быть прежним. Мы команда, которая <br> всегда с клиентами "на одной волне". Поэтому, мы всегда готовы <br> усовершенствовать каждого, кто к нам приходит!</pre>
-                    <a class="sign-online-black" href="#">ОНЛАЙН-ЗАПИСЬ</a>
+                    <a class="sign-online-black" href="#" data-toggle-backdrop-sign>ОНЛАЙН-ЗАПИСЬ</a>
                 </div>
             </div>        
       </section>
@@ -125,7 +125,7 @@
                         </tr>
                     </table>
              </div>    
-             <a class="sign-online" href="#">ОНЛАЙН-ЗАПИСЬ</a>     
+             <a class="sign-online" href="#" data-toggle-backdrop-sign>ОНЛАЙН-ЗАПИСЬ</a>     
         </div>   
         </section>
      
@@ -263,7 +263,7 @@
                         <div class="message-box">
                             <textarea class="message-area" name="msg" id="msg" cols="20" rows="3" placeholder="сообщение"></textarea>
                         </div>
-                        <button type="submit" class="sign-online">отправить</button>
+                        <button type="submit" class="sign-online" >отправить</button>
                       </form>
                 </div>
                 <div class="contacts-foot" id="contacts">
@@ -301,10 +301,24 @@
                     <a class="nav-link-sn" href="#">YouTube</a>
                 </li>
             </ul>
-        
-        
         </div>
     </footer>
+
+    <div data-backdrop-sign class="backdrop-sign is-hidden">
+       
+        <div class="modal-sign">
+            <button data-toggle-backdrop-sign>
+                <svg class="backdrop-modal-btn">
+                    <use href="./images/icons/symbol-defs.svg#icon-cross" width="30" height="30"></use>
+                </svg>
+            </button>
+        </div>
+
+
+
+    </div>
+
+    <script src="./js/modal.js"></script>
 </body>
 </html>
 
