@@ -655,7 +655,6 @@ text-transform: uppercase;
   letter-spacing: 0.1em;
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--grey-text-op40);
 }
 
 .signform input,
@@ -663,14 +662,24 @@ text-transform: uppercase;
   color: var(--grey-text-op40);
   background: transparent;
   border: none;
-  border-bottom: 1px solid var(--grey-text-op40);
+  border-bottom: 1px solid rgba(157,164,189,1);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .signform input:active,
 .signform textarea:active {
-  color: var(--white-text);
+  color: rgba(157,164,189,0,4);
   background: transparent;
 }
+.signform input:hover,
+.signform textarea:hover,
+.signform input:focus,
+.signform textarea:focus {
+    color: white;
+    transform:color;
+}
+
 
 .signform input[name='name'] {
     width: 270px;
@@ -682,6 +691,22 @@ text-transform: uppercase;
     width: 560px;
     
   }
+
+  .sign-name-tel {
+    display:flex;
+    margin-bottom: 44px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.sign-name-tel .input-name, 
+.sign-name-tel .input-tel {
+    border:none;
+    border-bottom: 1px solid rgba(157,164,189,1);
+    height:24px;
+    color:rgba(157,164,189,1);
+}
 
 .adr-btn {
     color:var(--grey-text);
@@ -747,22 +772,6 @@ text-transform: uppercase;
     flex-direction: column;
 } */
 
-
-.sign-name-tel {
-    display:flex;
-    margin-bottom: 44px;
-    justify-content: space-between;
-    align-items: center;
-    
-}
-
-.sign-name-tel .input-name, 
-.sign-name-tel .input-tel {
-    border:none;
-    border-bottom: 1px solid var(--grey-text-op60);
-    height:24px;
-    color:var(--grey-text);
-}
 
 .contacts-foot {
     margin-left: 140px;
@@ -836,23 +845,88 @@ display:flex;
     top:50%;
     left:50%;
     transform: translateX(-50%) translateY(-50%);
-    width:528px;
-    height:581px;
+    width:300px;
+    height:300px;
     background-color: white; 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px; 
 }
 
 .backdrop-modal-btn {
+   
     position:absolute;
     top:8px;
     left:8px;
     cursor:pointer;
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    color: var(--graphite);
+    
+}
+.close-btn {
+    display:flex;
+    flex-direction: column;
+    margin: auto;
+    color: var(--graphite);
+}
+
+
+.close-btn:hover,
+.close-btn:focus {
+    color:#FF6C00;
 }
 
 .backdrop-sign.is-hidden {
     opacity:0;
- pointer-events: none;
+    pointer-events: none;
+}
+
+.modal-sign input,
+.modal-sign textarea {
+  color: var(--grey-text-op40);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.36;
+  letter-spacing: 0.1em;
+  background: transparent;
+  border: none;
+  margin-top:10px;
+}
+
+.modal-sign input,
+.modal-sign textarea {
+  color: var(--grey-text-op40);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid rgba(157,164,189,1);
+  margin-top:10px;
+
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-sign input:active,
+.modal-sign textarea:active {
+  color: rgba(157,164,189,0,4);
+  background: transparent;
+}
+.modal-sign input:hover,
+.modal-sign textarea:hover,
+.modal-sign input:focus,
+.modal-sign textarea:focus {
+    color: white;
+    transform:color;
 }
 
 
+.modal-sign input[name='name'] {
+    width: 270px;
+    margin-right: 30px;
+    padding-bottom: 8px;
+}
+
+.modal-sign textarea[name='msg'] {
+    width: 200px;
+}
